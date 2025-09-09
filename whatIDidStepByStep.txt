@@ -1,0 +1,33 @@
+# you need uv (is like more fancy pip) - get it from astral website
+# you create git repo, then you need to tell uv that it is a uv project so uv can work:
+
+uv init
+
+uv add langflow - optional if you dont want to use langflow
+
+uv sync - install all stuff
+
+uv run langflow run
+
+
+For this task, we need an open-source LLM suitable for generation tasks, preferably capable of reasoning, instruction following, and safe content filtering. Since the focus is domain name generation with iterative improvement, the model should also be:
+
+Efficient for experimentation (LoRA/fine-tuning friendly)
+
+Strong in text generation with multi-step reasoning
+
+Small-to-medium parameter sizes are fine if compute is limited
+
+Optionally support safety/sanitization (or easy to add a filter layer)
+
+From your Ollama model list, the top candidates are:
+
+
+
+you must make .env file and include your open AI qpi key there
+
+dvc init 
+
+#and set up a local storage
+
+dvc remote add -d dvc-remote /dvc_data_storage
