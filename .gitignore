@@ -1,3 +1,14 @@
+# custom
+
+complete_checkpoint/
+trained_model/README.md
+workspace/
+
+
+
+meta-llama/
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
